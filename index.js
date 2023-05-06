@@ -4,7 +4,11 @@ function appendAssetWithLineBreaks(asset, container) {
   container.appendChild(pElement);
 }
 
-fetch('https://api.coincap.io/v2/assets')
+fetch('https://api.coincap.io/v2/assets', {
+  headers: {
+    'Accept-Encoding': 'gzip'
+  }
+})
   .then(response => response.json())
   .then(data => {
     const assets = data.data;
