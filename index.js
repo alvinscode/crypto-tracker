@@ -1,3 +1,9 @@
+function appendAssetWithLineBreaks(asset, container) {
+  const pElement = document.createElement('p');
+  pElement.innerHTML = `ID: ${asset.id}<br>Symbol: ${asset.symbol}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br><br>`;
+  container.appendChild(pElement);
+}
+
 fetch('https://api.coincap.io/v2/assets')
   .then(response => response.json())
   .then(data => {
@@ -9,15 +15,10 @@ fetch('https://api.coincap.io/v2/assets')
     // Grab the top 3 assets
     const top3Assets = assets.slice(0, 3);
 
-    // Create an array of strings containing the ID, symbol, changePercent24Hr, and priceUSD values for the top assets
-    const topAssetStrings = top3Assets.map(asset => `ID: ${asset.id}, Symbol: ${asset.symbol}, Change: ${asset.changePercent24Hr}%, Price: $${asset.priceUsd}`);
-
-    // Append the strings to the 'hotcrypto' div
+    // Append the assets with line breaks to the 'hotcrypto' div
     const hotcryptoDiv = document.getElementById('hotcrypto');
-    topAssetStrings.forEach(assetString => {
-      const pElement = document.createElement('p');
-      pElement.textContent = assetString;
-      hotcryptoDiv.appendChild(pElement);
+    top3Assets.forEach(asset => {
+      appendAssetWithLineBreaks(asset, hotcryptoDiv);
     });
 
     // Sort assets by changePercent24Hr in ascending order
@@ -26,15 +27,10 @@ fetch('https://api.coincap.io/v2/assets')
     // Grab the bottom 3 assets
     const bottom3Assets = assets.slice(0, 3);
 
-    // Create an array of strings containing the ID, symbol, changePercent24Hr, and priceUSD values for the bottom assets
-    const bottomAssetStrings = bottom3Assets.map(asset => `ID: ${asset.id}, Symbol: ${asset.symbol}, Change: ${asset.changePercent24Hr}%, Price: $${asset.priceUsd}`);
-
-    // Append the strings to the 'coldcrypto' div
+    // Append the assets with line breaks to the 'coldcrypto' div
     const coldcryptoDiv = document.getElementById('coldcrypto');
-    bottomAssetStrings.forEach(assetString => {
-      const pElement = document.createElement('p');
-      pElement.textContent = assetString;
-      coldcryptoDiv.appendChild(pElement);
+    bottom3Assets.forEach(asset => {
+      appendAssetWithLineBreaks(asset, coldcryptoDiv);
     });
   })
   .catch(error => {
