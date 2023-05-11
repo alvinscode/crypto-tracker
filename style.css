@@ -25,3 +25,8 @@ html {
 #symbol {
     text-align: center;
 }
+
+#footer {
+    position: absolute;
+    bottom: 0;
+}
