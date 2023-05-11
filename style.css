@@ -18,7 +18,7 @@ html {
 }
 
 h1 {
-    font-size: 50x;
+    font-size: 100px;
     text-transform: uppercase;
     font-family: 'Gambetta', serif;
     letter-spacing: -3px;
@@ -34,13 +34,6 @@ h1:hover {
     font-variation-settings: "wght" 582; 
     letter-spacing: 1px;
   }
-
-#descriptionbox {
-    font-family: sans-serif;
-    text-align: center;
-    background: white;
-    border-radius: 2%;
-}
 
 #hotbox {
     font-family: sans-serif;
@@ -95,4 +88,5 @@ h1:hover {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     text-align: center;
+    font-size: xx-large;
 }
