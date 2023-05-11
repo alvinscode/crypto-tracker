@@ -10,10 +10,16 @@ html {
 
 #hotbox {
     background: linear-gradient(#E8C547, #C20114);
+    border-image: linear-gradient(#E8C547, #C20114) 10;
+    border-width: 4px;
+    border-style: solid;
 }
 
 #coldbox {
     background: linear-gradient( #1d7d8e, #e9fbcf);
+    border-image: linear-gradient(#1d7d8e, #e9fbcf) 10;
+    border-width: 4px;
+    border-style: solid;
 }
 
 #hot {
