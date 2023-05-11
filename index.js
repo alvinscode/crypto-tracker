@@ -15,7 +15,7 @@ function updateAssets() {
     };
 
     const revealId = () => {
-      pElement.innerHTML = `Symbol: ${asset.symbol}<br>ID: ${asset.id}`;
+      pElement.innerHTML = `ID: ${asset.id}`;
       pElement.id = `id`
     };
 
