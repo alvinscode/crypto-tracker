@@ -1,7 +1,19 @@
 html {
-    font-family: sans-serif;
     display: table;
     margin: auto;
+    background: url(https://w0.peakpx.com/wallpaper/422/850/HD-wallpaper-doge-to-the-moon-dogecoin-currency-crypto-deviantart.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#hotbox {
+    background: linear-gradient(#E8C547, #C20114);
+}
+
+#coldbox {
+    background: linear-gradient( #1d7d8e, #e9fbcf);
 }
 
 #hot {
