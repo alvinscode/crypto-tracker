@@ -5,7 +5,7 @@ function updateAssets() {
     pElement.id = `symbol`
 
     const toggleInfo = () => {
-      if (pElement.innerHTML === `Symbol: ${asset.symbol}`) {
+      if (pElement.innerHTML === `Symbol: ${asset.symbol}`) { // Allows user to spam click details without moving mouse
         pElement.innerHTML = `Symbol: ${asset.symbol}<br>ID: ${asset.id}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br>Rank: ${asset.rank}<br>`;
         pElement.id = `detail`
       } else if (pElement.innerHTML === `Click for More Details`) {
