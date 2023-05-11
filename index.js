@@ -1,4 +1,4 @@
-function updateAssets() {
+function updateAssets() { // Function that appends more details on each asset upon being clicked
   function appendAssetWithLineBreaks(asset, container) {
     const pElement = document.createElement('p');
     pElement.textContent = `${asset.symbol}`;
@@ -17,12 +17,12 @@ function updateAssets() {
       }
     };
 
-    const revealId = () => {
+    const revealId = () => { // Mouseover event
       pElement.innerHTML = `Click for More Details`;
       pElement.id = `more`
     };
 
-    const resetSymbol = () => {
+    const resetSymbol = () => { //Mouseout event
       pElement.textContent = `${asset.symbol}`;
       pElement.id = `symbol`
     };
