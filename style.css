@@ -27,6 +27,8 @@ html {
 }
 
 #footer {
+    margin:auto;
+    text-align: center;
     position: absolute;
     bottom: 0;
 }

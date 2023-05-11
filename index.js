@@ -81,8 +81,7 @@ function updateAssets() {
 
   fetchAndDisplayAssets(); // Fetch and display assets initially
 
-  // Update assets every minute (60,000 milliseconds)
-  setInterval(fetchAndDisplayAssets, 10000);
+  setInterval(fetchAndDisplayAssets, 10000); // Update assets every 10s (10,0000 milliseconds)
 }
 
 updateAssets(); // Call the function to load assets when the page first opens
