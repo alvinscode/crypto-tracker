@@ -2,9 +2,16 @@ function updateAssets() {
   function appendAssetWithLineBreaks(asset, container) {
     const pElement = document.createElement('p');
     pElement.textContent = `Symbol: ${asset.symbol}`;
-    pElement.addEventListener('click', () => {
-      pElement.innerHTML = `ID: ${asset.id}<br>Symbol: ${asset.symbol}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br><br>`;
-    });
+
+    const toggleInfo = () => {
+      if (pElement.innerHTML === `Symbol: ${asset.symbol}`) {
+        pElement.innerHTML = `ID: ${asset.id}<br>Symbol: ${asset.symbol}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br><br>`;
+      } else {
+        pElement.innerHTML = `Symbol: ${asset.symbol}`;
+      }
+    };
+
+    pElement.addEventListener('click', toggleInfo);
     container.appendChild(pElement);
   }
 
