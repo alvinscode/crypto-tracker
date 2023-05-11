@@ -8,6 +8,15 @@ html {
     background-size: cover;
 }
 
+#headerbox {
+    background: linear-gradient(#F53803, #ACD3E8);
+    text-align: center;
+}
+
+#descriptionbox {
+    text-align: center;
+}
+
 #hotbox {
     background: linear-gradient(#E8C547, #C20114);
     border-image: linear-gradient(#E8C547, #C20114) 10;
@@ -35,7 +44,7 @@ html {
 }
 
 #more {
-    color: #A9A9A9;
+    color: #D3D3D3;
     text-align: center;
 }
 
