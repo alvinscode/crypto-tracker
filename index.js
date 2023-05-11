@@ -1,4 +1,4 @@
-function updateAssets() { // Function that appends more details on each asset upon being clicked
+function updateAssets() { // Mouseclick event
   function appendAssetWithLineBreaks(asset, container) {
     const pElement = document.createElement('p');
     pElement.textContent = `${asset.symbol}`;
