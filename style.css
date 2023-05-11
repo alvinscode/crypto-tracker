@@ -5,11 +5,13 @@ html {
 }
 
 #hot {
+    font-family: Georgia, serif;
     max-width: max-content;
     margin: auto;
 }
 
 #cold {
+    font-family: Georgia, serif;
     max-width: max-content;
     margin: auto;
 }
