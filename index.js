@@ -1,7 +1,10 @@
 function updateAssets() {
   function appendAssetWithLineBreaks(asset, container) {
     const pElement = document.createElement('p');
-    pElement.innerHTML = `ID: ${asset.id}<br>Symbol: ${asset.symbol}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br><br>`;
+    pElement.textContent = `Symbol: ${asset.symbol}`;
+    pElement.addEventListener('click', () => {
+      pElement.innerHTML = `ID: ${asset.id}<br>Symbol: ${asset.symbol}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br><br>`;
+    });
     container.appendChild(pElement);
   }
 
