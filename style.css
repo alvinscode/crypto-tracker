@@ -1,3 +1,27 @@
+html {
+    display: table;
+    margin: auto;
+}
+
+#hot {
+    max-width: max-content;
+    margin: auto;
+}
+
+#cold {
+    max-width: max-content;
+    margin: auto;
+}
+
 #id {
     color: #808080;
+    text-align: center;
+}
+
+#detail {
+    text-align: center;
+}
+
+#symbol {
+    text-align: center;
 }
