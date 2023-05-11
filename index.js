@@ -5,15 +5,28 @@ function updateAssets() {
 
     const toggleInfo = () => {
       if (pElement.innerHTML === `Symbol: ${asset.symbol}`) {
-        pElement.innerHTML = `Symbol: ${asset.symbol}<br>ID: ${asset.id}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br><br>`;
+        pElement.innerHTML = `ID: ${asset.id}<br>Symbol: ${asset.symbol}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br><br>`;
       } else {
         pElement.innerHTML = `Symbol: ${asset.symbol}`;
       }
     };
 
+    const revealId = () => {
+      pElement.textContent = `ID: ${asset.id}`;
+    };
+
+    const resetSymbol = () => {
+      pElement.textContent = `Symbol: ${asset.symbol}`;
+    };
+
     pElement.addEventListener('click', toggleInfo);
+    pElement.addEventListener('mouseover', revealId);
+    pElement.addEventListener('mouseout', resetSymbol);
+
     container.appendChild(pElement);
   }
+
+
 
   function fetchAndDisplayAssets() {
     fetch('https://api.coincap.io/v2/assets', {
