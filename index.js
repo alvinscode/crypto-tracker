@@ -8,7 +8,7 @@ function updateAssets() {
       if (pElement.innerHTML === `Symbol: ${asset.symbol}`) {
         pElement.innerHTML = `Symbol: ${asset.symbol}<br>ID: ${asset.id}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br>Rank: ${asset.rank}<br>`;
         pElement.id = `detail`
-      } else if (pElement.innerHTML === `ID: ${asset.id}`) {
+      } else if (pElement.innerHTML === `Click for More`) {
         pElement.innerHTML = `Symbol: ${asset.symbol}<br>ID: ${asset.id}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br>Rank: ${asset.rank}<br>`;
         pElement.id = `detail`
       } else {
@@ -18,8 +18,8 @@ function updateAssets() {
     };
 
     const revealId = () => {
-      pElement.innerHTML = `ID: ${asset.id}`;
-      pElement.id = `id`
+      pElement.innerHTML = `Click for More`;
+      pElement.id = `more`
     };
 
     const resetSymbol = () => {

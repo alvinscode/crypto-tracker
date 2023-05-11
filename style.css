@@ -34,7 +34,7 @@ html {
     margin: auto;
 }
 
-#id {
+#more {
     color: #808080;
     text-align: center;
 }
@@ -58,4 +58,5 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    text-align: center;
 }
