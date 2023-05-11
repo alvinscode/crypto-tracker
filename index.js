@@ -5,7 +5,7 @@ function updateAssets() {
 
     const toggleInfo = () => {
       if (pElement.innerHTML === `Symbol: ${asset.symbol}`) {
-        pElement.innerHTML = `ID: ${asset.id}<br>Symbol: ${asset.symbol}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br><br>`;
+        pElement.innerHTML = `Symbol: ${asset.symbol}<br>ID: ${asset.id}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br><br>`;
       } else {
         pElement.innerHTML = `Symbol: ${asset.symbol}`;
       }
