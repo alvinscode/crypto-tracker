@@ -1,18 +1,18 @@
 function updateAssets() {
   function appendAssetWithLineBreaks(asset, container) {
     const pElement = document.createElement('p');
-    pElement.textContent = `Symbol: ${asset.symbol}`;
+    pElement.textContent = `${asset.symbol}`;
     pElement.id = `symbol`
 
     const toggleInfo = () => {
-      if (pElement.innerHTML === `Symbol: ${asset.symbol}`) { // Allows user to spam click details without moving mouse
-        pElement.innerHTML = `Symbol: ${asset.symbol}<br>ID: ${asset.id}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br>Rank: ${asset.rank}<br>`;
+      if (pElement.innerHTML === `${asset.symbol}`) { // Allows user to spam click details without moving mouse
+        pElement.innerHTML = `Ticker: ${asset.symbol}<br>Name: ${asset.id}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br>Rank: ${asset.rank}<br>`;
         pElement.id = `detail`
       } else if (pElement.innerHTML === `Click for More Details`) {
-        pElement.innerHTML = `Symbol: ${asset.symbol}<br>ID: ${asset.id}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br>Rank: ${asset.rank}<br>`;
+        pElement.innerHTML = `Ticker: ${asset.symbol}<br>Name: ${asset.id}<br>Change: ${asset.changePercent24Hr}%<br>Price: $${asset.priceUsd}<br>Rank: ${asset.rank}<br>`;
         pElement.id = `detail`
       } else {
-        pElement.innerHTML = `Symbol: ${asset.symbol}`;
+        pElement.innerHTML = `${asset.symbol}`;
         pElement.id = `symbol`
       }
     };
@@ -23,7 +23,7 @@ function updateAssets() {
     };
 
     const resetSymbol = () => {
-      pElement.textContent = `Symbol: ${asset.symbol}`;
+      pElement.textContent = `${asset.symbol}`;
       pElement.id = `symbol`
     };
 

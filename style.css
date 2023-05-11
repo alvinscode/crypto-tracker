@@ -17,11 +17,33 @@ html {
     text-align: center;
 }
 
-#descriptionbox {
+h1 {
+    font-size: 50x;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
     text-align: center;
+  }
+
+h1:hover {
+    font-variation-settings: "wght" 582; 
+    letter-spacing: 1px;
+  }
+
+#descriptionbox {
+    font-family: sans-serif;
+    text-align: center;
+    background: white;
+    border-radius: 2%;
 }
 
 #hotbox {
+    font-family: sans-serif;
     background: linear-gradient(#E8C547, #C20114);
     border-image: linear-gradient(#E8C547, #C20114) 10;
     border-width: 4px;
@@ -29,6 +51,7 @@ html {
 }
 
 #coldbox {
+    font-family: sans-serif;
     background: linear-gradient( #1d7d8e, #e9fbcf);
     border-image: linear-gradient(#1d7d8e, #e9fbcf) 10;
     border-width: 4px;
