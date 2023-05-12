@@ -1,6 +1,6 @@
 # Fire and Ice Crypto Tracker
 
-Fire and Ice Crypto Tracker is a single-page application that fetches data from the CoinCap API 2.0, and displays the 3 highest and lowest performing cryptocurrencies based off of their percent change in the last 24 hours. The goal of this project is to create a very simple cryptocurrency tracker that is very easy to use, even for someone who has never heard of cryptocurrerncy or is familiar with investing, by giving the top and bottom 3 performing coins in real time without any prior research or analysis.
+Fire and Ice Crypto Tracker is a single-page application that fetches data from the CoinCap API 2.0, and displays the 3 highest and lowest performing cryptocurrencies based off of their percent change in price over the last 24 hours. The goal of this project is to create a very simple cryptocurrency tracker that is very easy to use, even for someone who has never heard of cryptocurrerncy or is familiar with investing, by giving the top and bottom 3 performing coins in real time without any prior research or analysis.
 
 ## Usage
 
