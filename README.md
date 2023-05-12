@@ -8,6 +8,6 @@ Upon loading the page, data will be fetched immediately and tickers will be disp
 
 ## Acknowledgement
 
-https://docs.coincap.io/ - CoinCap API 2.0
-https://www.deviantart.com/tolyanmy - Dogecoin Wallpaper
-https://codepen.io/DuskoStamenic/pen/QWaoBPY - Hover Effect used on Title
+https://docs.coincap.io/ - CoinCap API 2.0 <br>
+https://www.deviantart.com/tolyanmy - Dogecoin Wallpaper <br>
+https://codepen.io/DuskoStamenic/pen/QWaoBPY - Hover Effect used on Title <br>
