@@ -4,6 +4,8 @@ Fire and Ice Crypto Tracker is a single-page application that fetches data from 
 
 ## Usage
 
+https://alvinscode.github.io/crypto-tracker/
+
 Upon loading the page, data will be fetched immediately and tickers will be displayed under the "fire" and "ice" sections based off of their past 24 hour price change, with "fire" being the highest performing tickers, and "ice" being the lowest performing. Using the mouse to hover over a ticker will prompt the user to click for more information, which will reveal a few more details about the ticker that was clicked on. To hide the details, click again or move the mouse away from the ticker. New data will be fetched every 30 seconds, and tickers will update accordingly.
 
 ## Acknowledgement
