@@ -13,3 +13,24 @@ Upon loading the page, data will be fetched immediately and tickers will be disp
 https://docs.coincap.io/ - CoinCap API 2.0 <br>
 https://www.deviantart.com/tolyanmy - Dogecoin Wallpaper <br>
 https://codepen.io/DuskoStamenic/pen/QWaoBPY - Hover Effect used on Title <br>
+
+## How to Use This App
+
+```bash
+$ git clone git@github.com:alvinscode/crypto-tracker.git
+$ cd crypto-tracker
+```
+
+Open `index.html` in your preferred browser:
+
+If Local environment on Mac:
+
+```bash
+$ open index.html
+```
+
+If Local environment using WSL/Ubuntu:
+
+```bash
+$ explorer.exe index.html
+```
